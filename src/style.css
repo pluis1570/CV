@@ -1,0 +1,127 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+.vaardigheden{
+ width:100%;
+ margin: 0 auto;
+ display: flex;
+}
+.nederlands,.frans,.engels{
+vertical-align: middle;
+}
+.talen{
+ width: 200px;
+ display: inline-block;
+}
+.taal,.spreken, .schrijven{
+  display: inline;
+}
+
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.table{ 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('background.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('ik.jpg');
+  min-height:400px;  
+}
+
+.pimg3 {
+  background-image:url('skills.jpg');
+  min-height: 400px;
+}
+
+.pimg4{
+  background-image:url('work.jpg');
+  min-height: 400px;
+  /* background-size: cover; */
+}
+
+.pimg5{
+  background-image:url('taal.jpg');
+  min-height: 400px;
+    
+}
+
+.pimg6{
+  background-image:url('hobbies.jpg');
+  min-height: 400px;    
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+
+@media(max-width:1100px){
+    .pimg1, .pimg2, .pimg3, .pimg4 .pimg5 .pimg6{ 
+        min-height: 700px;
+    }
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3, .pimg4 .pimg5 .pimg6{
+    background-attachment:scroll;
+  }
+}
