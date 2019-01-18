@@ -1,127 +1,125 @@
-body, html{
-  height:100%;
-  margin:0;
-  font-size:16px;
-  font-family:"Lato", sans-serif;
-  font-weight:400;
-  line-height:1.8em;
-  color:#666;
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
 }
 
-.vaardigheden{
- width:100%;
- margin: 0 auto;
- display: flex;
+.gegevens {
+  width: 200px;
+  height: 150px;
+  float: left;
+  text-align: left;
 }
-.nederlands,.frans,.engels{
-vertical-align: middle;
+.spraak{
+  width: 100px;
+  height: 150px;
+  display: inline-block;
 }
-.talen{
- width: 200px;
- display: inline-block;
+
+.schrift{
+  width: 100px;
+  float: right;
 }
-.taal,.spreken, .schrijven{
+
+.talen {
+  width: 350px;
+  float: left;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.spreken, .schrijven {
   display: inline;
 }
 
-
-.center{
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
+.section {
+  text-align: center;
+  padding: 50px 80px;
 }
 
-.table{ 
-  margin-left: auto;
-  margin-right: auto;
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+  overflow: hidden;
+  padding-bottom: 90px;
+  margin: 0 auto;
 }
 
-.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6{
-  position:relative;
-  opacity:0.70;
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+  overflow: hidden;
+  padding-bottom: 90px;
+  margin: 0 auto; 
 }
 
-.pimg1{
-  background-image:url('background.jpg');
-  min-height:100%;
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6 {
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.pimg2{
-  background-image:url('ik.jpg');
-  min-height:400px;  
+.pimg1 {
+  background-image: url('background.jpg');
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url('ik.jpg');
+  min-height: 400px;
 }
 
 .pimg3 {
-  background-image:url('skills.jpg');
+  background-image: url('skills.jpg');
   min-height: 400px;
 }
 
-.pimg4{
-  background-image:url('work.jpg');
+.pimg4 {
+  background-image: url('work.jpg');
   min-height: 400px;
-  /* background-size: cover; */
 }
 
-.pimg5{
-  background-image:url('taal.jpg');
+.pimg6 {
+  background-image: url('hobbies.jpg');
   min-height: 400px;
-    
 }
 
-.pimg6{
-  background-image:url('hobbies.jpg');
-  min-height: 400px;    
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }
 
-.section{
-  text-align:center;
-  padding:50px 80px;
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
 }
 
-.section-light{
-  background-color:#f4f4f4;
-  color:#666;
+.ptext .border.trans {
+  background-color: transparent;
 }
 
-.section-dark{
-  background-color:#282e34;
-  color:#ddd;
+@media(max-width:1100px) {
+  .pimg1, .pimg2, .pimg3, .pimg4 .pimg6 {
+    min-height: 700px;
+  }
 }
 
-.ptext{
-  position:absolute;
-  top:50%;
-  width:100%;
-  text-align:center;
-  color:#000;
-  font-size:27px;
-  letter-spacing:8px;
-  text-transform:uppercase;
-}
-
-.ptext .border{
-  background-color:#111;
-  color:#fff;
-  padding:20px;
-}
-
-.ptext .border.trans{
-  background-color:transparent;
-}
-
-
-@media(max-width:1100px){
-    .pimg1, .pimg2, .pimg3, .pimg4 .pimg5 .pimg6{ 
-        min-height: 700px;
-    }
-}
-
-@media(max-width:568px){
-  .pimg1, .pimg2, .pimg3, .pimg4 .pimg5 .pimg6{
-    background-attachment:scroll;
+@media(max-width:568px) {
+  .pimg1, .pimg2, .pimg3, .pimg4 .pimg6 {
+    background-attachment: scroll;
   }
 }
